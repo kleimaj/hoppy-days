@@ -16,6 +16,7 @@ position = Vector2( 199.29, 542.643 )
 texture = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="ground_cake"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_cake/StaticBody2D"]
 polygon = PoolVector2Array( -174.493, -46.7955, 179.108, -46.0463, 187.344, -39.2093, 189.596, -28.8158, 190.345, -16.0802, 159.63, 34.1131, -159.509, 46.0995, -189.476, -13.8328, -188.781, -34.5282, -184.686, -42.7177 )
@@ -25,6 +26,7 @@ position = Vector2( 121.94, 408.643 )
 texture = ExtResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="ground_cake_small"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_cake_small/StaticBody2D"]
 polygon = PoolVector2Array( -84.4398, -50.1428, 86.5602, -49.6428, 92.7404, -47.8672, 96.6691, -44.2192, 100.036, -38.8875, 100.56, -32.1428, 100.56, -19.1428, 75.0602, 47.3572, 69.5602, 49.8572, -77.9398, 38.8572, -99.4398, -18.1428, -98.9398, -34.6428, -96.4398, -43.1428 )
@@ -34,6 +36,7 @@ position = Vector2( 161.209, 74.4973 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="ground_grass"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_grass/StaticBody2D2"]
 polygon = PoolVector2Array( -174.493, -46.7955, 179.108, -46.0463, 187.344, -39.2093, 189.596, -28.8158, 190.345, -16.0802, 159.63, 34.1131, -159.509, 46.0995, -189.476, -13.8328, -188.781, -34.5282, -184.686, -42.7177 )
@@ -43,6 +46,7 @@ position = Vector2( 56.6711, -82.3207 )
 texture = ExtResource( 2 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="ground_grass_small"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_grass_small/StaticBody2D2"]
 polygon = PoolVector2Array( -84.4398, -50.1428, 86.5602, -49.6428, 92.7404, -47.8672, 96.6691, -44.2192, 100.036, -38.8875, 100.56, -32.1428, 100.56, -19.1428, 75.0602, 47.3572, 69.5602, 49.8572, -77.9398, 38.8572, -99.4398, -18.1428, -98.9398, -34.6428, -96.4398, -43.1428 )
@@ -52,6 +56,7 @@ position = Vector2( 841.182, 555.734 )
 texture = ExtResource( 7 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="ground_sand"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_sand/StaticBody2D3"]
 polygon = PoolVector2Array( -174.493, -46.7955, 179.108, -46.0463, 187.344, -39.2093, 189.596, -28.8158, 190.345, -16.0802, 159.63, 34.1131, -159.509, 46.0995, -189.476, -13.8328, -188.781, -34.5282, -184.686, -42.7177 )
@@ -61,6 +66,7 @@ position = Vector2( 760.473, 380.428 )
 texture = ExtResource( 5 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="ground_sand_small"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_sand_small/StaticBody2D3"]
 polygon = PoolVector2Array( -84.4398, -50.1428, 86.5602, -49.6428, 92.7404, -47.8672, 96.6691, -44.2192, 100.036, -38.8875, 100.56, -32.1428, 100.56, -19.1428, 75.0602, 47.3572, 69.5602, 49.8572, -77.9398, 38.8572, -99.4398, -18.1428, -98.9398, -34.6428, -96.4398, -43.1428 )
@@ -70,6 +76,7 @@ position = Vector2( 889.24, 47.9069 )
 texture = ExtResource( 6 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="ground_snow"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_snow/StaticBody2D4"]
 polygon = PoolVector2Array( -174.493, -46.7955, 179.108, -46.0463, 187.344, -39.2093, 189.596, -28.8158, 190.345, -16.0802, 159.63, 34.1131, -159.509, 46.0995, -189.476, -13.8328, -188.781, -34.5282, -184.686, -42.7177 )
@@ -79,6 +86,7 @@ position = Vector2( 796.971, 210.474 )
 texture = ExtResource( 8 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="ground_snow_small"]
+collision_layer = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_snow_small/StaticBody2D4"]
 polygon = PoolVector2Array( -84.4398, -50.1428, 86.5602, -49.6428, 92.7404, -47.8672, 96.6691, -44.2192, 100.036, -38.8875, 100.56, -32.1428, 100.56, -19.1428, 75.0602, 47.3572, 69.5602, 49.8572, -77.9398, 38.8572, -99.4398, -18.1428, -98.9398, -34.6428, -96.4398, -43.1428 )
