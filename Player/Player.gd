@@ -8,6 +8,8 @@ const UP = Vector2(0,-1)
 const JUMP_SPEED = 3500
 const WORLD_LIMIT = 4000
 
+var lives = 3
+
 signal animate
 
 func _physics_process(delta):
@@ -45,13 +47,12 @@ func animate():
 
 func end_game():
 		get_tree().change_scene("res://Levels/GameOver.tscn")
-#	if motion.y < 0:
-#		$PlayerAnimation.play("jump")
-#	elif motion.x > 0:
-#		$PlayerAnimation.play("walk")
-#		$PlayerAnimation.set_flip_h(false)		
-#	elif motion.x < 0:
-#		$PlayerAnimation.play("walk")
-#		$PlayerAnimation.set_flip_h(true)
-#	else:
-#		$PlayerAnimation.play("idle")
+
+func hurt():
+	position.y -= 1
+	# don't execute, wait a frame
+	yield(get_tree(), "idle_frame")
+	motion.y -= JUMP_SPEED
+	lives -= 1
+	if lives < 0:
+		end_game()
