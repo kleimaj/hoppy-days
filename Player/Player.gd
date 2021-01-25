@@ -7,6 +7,7 @@ const GRAVITY = 150
 const UP = Vector2(0,-1)
 const JUMP_SPEED = 3500
 const WORLD_LIMIT = 4000
+const BOOST_MULTIPLIER = 1.5
 
 var lives = 3
 
@@ -33,8 +34,7 @@ func apply_gravity():
 func jump():
 	if Input.is_action_pressed("jump") and is_on_floor():
 		motion.y -= JUMP_SPEED
-		$AudioStreamPlayer.stream = load("res://SFX/jump1.ogg")
-		$AudioStreamPlayer.play()
+		$JumpSFX.play()
 
 func move():
 	if Input.is_action_pressed("left") and not Input.is_action_pressed("right"):
@@ -56,7 +56,12 @@ func hurt():
 	yield(get_tree(), "idle_frame")
 	motion.y -= JUMP_SPEED
 	lives -= 1
-	$AudioStreamPlayer.stream = load("res://SFX/pain.ogg")
-	$AudioStreamPlayer.play()
+	$PainSFX.play()
 	if lives < 0:
 		end_game()
+
+func boost():
+	position.y -= 1
+	# don't execute, wait a frame
+	yield(get_tree(), "idle_frame")
+	motion.y -= JUMP_SPEED * BOOST_MULTIPLIER
