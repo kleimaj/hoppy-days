@@ -83,4 +83,7 @@ texture = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -15.295
 [connection signal="animate" from="." to="PlayerAnimation" method="_on_Player_animate"]
