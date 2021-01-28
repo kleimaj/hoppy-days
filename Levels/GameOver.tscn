@@ -90,3 +90,4 @@ custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
 text = "Try Again!"
 icon = ExtResource( 3 )
 [connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
